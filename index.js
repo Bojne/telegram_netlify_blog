@@ -2,7 +2,7 @@ const TeleBot = require('telebot');
 var fs = require('fs');
 
 const bot = new TeleBot({
-	token: '1383482992:AAHa6tnvuJAIBJnC3Hii4oB3ST_-pleyF1k' // Required. Telegram Bot API token.
+	token: tg_api_key // Required. Telegram Bot API token.
 });
 
 var obj = {
