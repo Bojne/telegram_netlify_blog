@@ -1,6 +1,14 @@
 {
-  "dependencies": {
-    "node-fetch": "^2.6.1",
-    "telebot": "^1.4.1"
-  }
+	"name": "page-bot",
+	"dependencies": {
+		"node-fetch": "^2.6.1",
+		"telebot": "^1.4.1"
+	},
+	"scripts": {
+		"start": "node index.js",
+		"build": "node index.js"
+	},
+	"engines": {
+		"node": "10.3.0"
+	}
 }

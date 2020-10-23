@@ -1,8 +1,9 @@
 const TeleBot = require('telebot');
 var fs = require('fs');
+console.log();
 
 const bot = new TeleBot({
-	token: tg_api_key // Required. Telegram Bot API token.
+	token: process.env.tg_api_key // Required. Telegram Bot API token.
 });
 
 var obj = {
@@ -14,8 +15,8 @@ bot.start();
 function writeObj(msg, obj) {
 	obj.table.push({ message: msg.text, time: msg.date });
 	console.log(JSON.stringify(obj));
-	var json = JSON.stringify(obj);
-	fs.writeFile('myjsonfile.json', json, 'utf8', callback);
+	//var json = JSON.stringify(obj);
+	//fs.writeFile('myjsonfile.json', json, 'utf8', callback);
 }
 
 bot.on('sticker', (msg) => {
