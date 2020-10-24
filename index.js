@@ -20,7 +20,7 @@ bot.on('text', (msg) => {
 	writeObj(msg, obj);
 });
 
-bot.on(/(show\s)dog*/, (msg) => {
+bot.on(/(show\s)?dog*/, (msg) => {
 	console.log('Dog Requested');
 
 	return msg.reply.photo(getRandomImage());
