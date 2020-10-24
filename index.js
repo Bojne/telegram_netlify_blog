@@ -20,7 +20,7 @@ bot.on('text', (msg) => {
 	writeObj(msg, obj);
 });
 
-bot.on(/(show\s)?dog*/, (msg) => {
+bot.on((?i)/(show\s)dog*/, (msg) => {
 	console.log('Dog Requested');
 
 	return msg.reply.photo(getRandomImage());
@@ -39,7 +39,7 @@ function httpGet(theUrl) {
 // function to get a random image
 function getRandomImage() {
 	// get the json from the server
-	var json = httpGet('https://dog.ceo/api/breed/retriever/go/images/random');
+	var json = httpGet('https://dog.ceo/api/breed/retriever/golden/images/random');
 
 	// decode the json into an array
 	var array = JSON.parse(json);
