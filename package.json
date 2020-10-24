@@ -2,7 +2,8 @@
 	"name": "page-bot",
 	"dependencies": {
 		"node-fetch": "^2.6.1",
-		"telebot": "^1.4.1"
+		"telebot": "^1.4.1",
+		"xmlhttprequest": "^1.8.0"
 	},
 	"scripts": {
 		"start": "node index.js"
